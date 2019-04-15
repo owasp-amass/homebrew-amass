@@ -7,5 +7,9 @@ class Amass < Formula
   
     def install
       bin.install "amass"
+      bin.install "amass.netdomains"
+      bin.install "amass.viz"
+      bin.install "amass.db"
+      bin.install "amass.tracker"
     end
   end
