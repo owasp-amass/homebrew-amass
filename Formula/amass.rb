@@ -2,7 +2,7 @@
 class Amass < Formula
   desc "In-depth DNS Enumeration and Network Mapping"
   homepage "https://www.owasp.org/index.php/OWASP_Amass_Project"
-  url "http://github.com/OWASP/Amass/releases/download/2.9.10/amass_2.9.10_macos_amd64.zip", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+  url "http://github.com/OWASP/Amass/releases/download/2.9.10/amass_2.9.10_macos_amd64.zip"
   version "2.9.10"
   sha256 "15ce38393443f6c3e32b9288fc6d4a6c9ba9f046ab1c4b1e2e374c21aac209b8"
 
