@@ -2,14 +2,14 @@
 class Amass < Formula
   desc "In-depth DNS Enumeration and Network Mapping"
   homepage "https://www.owasp.org/index.php/OWASP_Amass_Project"
-  version "3.0.17"
+  version "3.0.18"
 
   if OS.mac?
-    url "http://github.com/OWASP/Amass/releases/download/3.0.17/amass_3.0.17_macos_amd64.zip"
-    sha256 "fd670d9096bfc1df713d7ec0e6f206abff27c6ed7bfb1f7f6c2f8c48a2a44075"
+    url "http://github.com/OWASP/Amass/releases/download/3.0.18/amass_3.0.18_macos_amd64.zip"
+    sha256 "6892f51c9086cc5d9d61c9704579140b2c5a5363a7da394a72ded0e643d7207a"
   elsif OS.linux?
-    url "http://github.com/OWASP/Amass/releases/download/3.0.17/amass_3.0.17_macos_amd64.zip"
-    sha256 "51dc48a0669fc245e79b4092ed1347ee85e3c88a4d9ba978304a3ae35b000dfd"
+    url "http://github.com/OWASP/Amass/releases/download/3.0.18/amass_3.0.18_linux_amd64.zip"
+    sha256 "defdb281fbc2e30d24056486affc0bee105dd901b292e279c3a67e987fba8abf"
   end
 
   def install
