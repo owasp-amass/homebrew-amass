@@ -5,10 +5,10 @@ class Amass < Formula
   version "3.0.17"
 
   if OS.mac?
-    url "http://github.com/OWASP/Amass/releases/download/3.0.17/amass_3.0.17_macos_amd64.zip"
+    url "https://github.com/OWASP/Amass/releases/download/3.0.17/amass_3.0.17_macos_amd64.zip"
     sha256 "fd670d9096bfc1df713d7ec0e6f206abff27c6ed7bfb1f7f6c2f8c48a2a44075"
   elsif OS.linux?
-    url "http://github.com/OWASP/Amass/releases/download/3.0.17/amass_3.0.17_macos_amd64.zip"
+    url "https://github.com/OWASP/Amass/releases/download/3.0.17/amass_3.0.17_macos_amd64.zip"
     sha256 "51dc48a0669fc245e79b4092ed1347ee85e3c88a4d9ba978304a3ae35b000dfd"
   end
 
