@@ -2,24 +2,24 @@
 class Amass < Formula
   desc "In-depth Attack Surface Mapping and Asset Discovery"
   homepage "https://owasp.org/www-project-amass/"
-  version "3.9.1"
+  version "3.10.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/OWASP/Amass/releases/download/v3.9.1/amass_macos_amd64.zip"
-    sha256 "bd85623a4213d2fcb1048f1675c3178d7888b066b6e7c2269b3c5d9ec3ca59f8"
+    url "https://github.com/OWASP/Amass/releases/download/v3.10.1/amass_macos_amd64.zip"
+    sha256 "c1f069c73b8d96b72139d3f508d5480e0701bab905e4ff4bf603b4fd673db894"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/OWASP/Amass/releases/download/v3.9.1/amass_linux_amd64.zip"
-      sha256 "4792f71c25f25c69f7896eabebefea056628a78d346e952a5411589ab6b47eee"
+      url "https://github.com/OWASP/Amass/releases/download/v3.10.1/amass_linux_amd64.zip"
+      sha256 "0d381d738b39b8cb8a4e9bc1907be839181b6fef3c4685fd9d881c6fa9dcb615"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/OWASP/Amass/releases/download/v3.9.1/amass_linux_arm64.zip"
-        sha256 "cda10ffbe3cb188203b743beed7db4afa853462ebf73e0bb42fcb9bb46950d34"
+        url "https://github.com/OWASP/Amass/releases/download/v3.10.1/amass_linux_arm64.zip"
+        sha256 "28c44a78916a3ddb579c244921ac24571903c157bee7ecf71599a8399d58d3a0"
       else
-        url "https://github.com/OWASP/Amass/releases/download/v3.9.1/amass_linux_arm.zip"
-        sha256 "27b64f2622bcda1d26543cf97bb4635d2b53b79f159207ddb0b469e7735f0ca0"
+        url "https://github.com/OWASP/Amass/releases/download/v3.10.1/amass_linux_arm.zip"
+        sha256 "cb2e84e9f2bb5cf130b1b4d5037debf835477bacb21a4dad9a405f178416ee56"
       end
     end
   end
