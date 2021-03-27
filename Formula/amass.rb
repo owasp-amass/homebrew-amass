@@ -5,28 +5,28 @@
 class Amass < Formula
   desc "In-depth Attack Surface Mapping and Asset Discovery"
   homepage "https://owasp.org/www-project-amass/"
-  version "3.11.11"
+  version "3.11.12"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/OWASP/Amass/releases/download/v3.11.11/amass_macos_amd64.zip"
-    sha256 "709bf7fe0938fe7ade3389f3b7743a029be623d6127c18811a62209825885ee4"
+    url "https://github.com/OWASP/Amass/releases/download/v3.11.12/amass_macos_amd64.zip"
+    sha256 "e7e295efd931b4c8d0484cc30a2f386ed63ad59d91e74509f045a12c5287cf5c"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/OWASP/Amass/releases/download/v3.11.11/amass_macos_arm64.zip"
-    sha256 "262810f50c19a604ab8585402796dd50aa978180f328b6e78119fd9c997bdf32"
+    url "https://github.com/OWASP/Amass/releases/download/v3.11.12/amass_macos_arm64.zip"
+    sha256 "f7b669fd98de8ad3da24a4f080720020134d4c32bb0a86d89e667e2151d66132"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/OWASP/Amass/releases/download/v3.11.11/amass_linux_amd64.zip"
-    sha256 "d305a256ab50b46681fd989075a329f3c7a80f7ecf3a531dbfe3f38ac2623392"
+    url "https://github.com/OWASP/Amass/releases/download/v3.11.12/amass_linux_amd64.zip"
+    sha256 "eee3437233005d144dfc97ff51cf1ccb0fa132bcad3c441614ba787359acbcfd"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/OWASP/Amass/releases/download/v3.11.11/amass_linux_arm.zip"
-    sha256 "261c08556b0cc1ed448f7db818550694f343c939201a6745c81fde5c7ba9ebee"
+    url "https://github.com/OWASP/Amass/releases/download/v3.11.12/amass_linux_arm.zip"
+    sha256 "70efd3ae8d2ed0371962665d0dcde0cebe7d44a6288304578789890494128e25"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/OWASP/Amass/releases/download/v3.11.11/amass_linux_arm64.zip"
-    sha256 "8769be00b661efe7a0b60ae78ce8fc5bcb5bdd566223fdb3f26de6653d469a29"
+    url "https://github.com/OWASP/Amass/releases/download/v3.11.12/amass_linux_arm64.zip"
+    sha256 "cee62f9b700fd7aba1184214fe4500409c6f276dcf0d09008f62c5ab3cb68d80"
   end
 
   def install
