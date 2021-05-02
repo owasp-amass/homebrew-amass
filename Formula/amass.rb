@@ -5,28 +5,28 @@
 class Amass < Formula
   desc "In-depth Attack Surface Mapping and Asset Discovery"
   homepage "https://owasp.org/www-project-amass/"
-  version "3.12.2"
+  version "3.12.3"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/OWASP/Amass/releases/download/v3.12.2/amass_macos_amd64.zip"
-    sha256 "e40e5a8d037213dad78f5382057d85401172c56dc679e97c6caf09cd9668ff0d"
+    url "https://github.com/OWASP/Amass/releases/download/v3.12.3/amass_macos_amd64.zip"
+    sha256 "a812759a8ddfb5c3a81caf538ef78c2257b13bcfef5c2dd1e28e8c644ca3dd63"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/OWASP/Amass/releases/download/v3.12.2/amass_macos_arm64.zip"
-    sha256 "62e0e1d510ae5ed3226cb5539abf1319e6ee8a150fe1b5d9c96f1924583889cd"
+    url "https://github.com/OWASP/Amass/releases/download/v3.12.3/amass_macos_arm64.zip"
+    sha256 "dfd29c5e3658039273efd0e5cbfe507d2266d22b1bdc70956afa8717df910b66"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/OWASP/Amass/releases/download/v3.12.2/amass_linux_amd64.zip"
-    sha256 "c8596b89925c293452ea7e21efc66551e666fe38c97baac72b9a5af8bef2071b"
+    url "https://github.com/OWASP/Amass/releases/download/v3.12.3/amass_linux_amd64.zip"
+    sha256 "24a3be37f617525187ad2638ba05eb80a3a016b2ea46434900d8261feb610ee6"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/OWASP/Amass/releases/download/v3.12.2/amass_linux_arm.zip"
-    sha256 "141dbd5480bd116609359fba44de1f0b88aadbbe8a579d5c2a176dfd2b6b08e7"
+    url "https://github.com/OWASP/Amass/releases/download/v3.12.3/amass_linux_arm.zip"
+    sha256 "4cdd4cb79a2b50e11e0899b77a6dcf60ac4d1628269e36786e65d90bcc642e3d"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/OWASP/Amass/releases/download/v3.12.2/amass_linux_arm64.zip"
-    sha256 "cfc78d522b03859d4d3f7cd499fdd934a5a70981698cecf9d6a0d415e9fb97eb"
+    url "https://github.com/OWASP/Amass/releases/download/v3.12.3/amass_linux_arm64.zip"
+    sha256 "4c098767b8034b120244588176563c9f50e5b6895a0be03d8b337c593bb80088"
   end
 
   def install
